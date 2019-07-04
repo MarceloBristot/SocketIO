@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat SMS</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+
+</head>
+
+<body>
+    <div id='acesso_usuario'>
+        <div class="row">
+            <div class="col-sm text-center">
+                <!-- <img src="../../../img/logo-sms.png" alt="..." class="img-fluid text-center logo-sms"> -->
+            </div>
+        </div>
+        <form id='login'>
+            <input type='text' placeholder='Insira seu apelido' name='apelido' id='apelido' />
+            <input type='submit' value='Entrar' />
+        </form>
+    </div>
+    <div id='sala_chat'>
+        <div id="historico_mensagens"></div>
+        <select multiple="multiple" id='lista_usuarios'>
+            <option value=''>Todos</option>
+        </select>
+        <form id='chat'>
+            <input type='text' id='texto_mensagem' name='texto_mensagem' />
+            <input type='submit' value='Enviar mensagem!' />
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="chatSettings.js">
+ 
+</script>
+</body>
+
+</html>
